@@ -1497,7 +1497,7 @@
 	"meta": {
 		"app": "https://www.codeandweb.com/texturepacker",
 		"version": "1.1",
-		"image": "https://bwood614.github.io/chrome-pets/spritesheet.png",
+		"image": "spritesheet.png",
 		"format": "RGBA8888",
 		"size": {
 			"w": 56,
