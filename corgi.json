@@ -447,7 +447,7 @@
 	"image": "spritesheet.png",
 	"format": "RGBA8888",
 	"size": {"w":56,"h":1728},
-	"scale": "2",
+	"scale": "0.5",
 	"smartupdate": "$TexturePacker:SmartUpdate:29fd28ce036dc5644985a778837a0c0e:348bc19c08aa72c8697dd8ad6f0b9484:729adc6043343cfda41c447ce8f464d6$"
 }
 }
