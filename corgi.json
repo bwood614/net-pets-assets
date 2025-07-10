@@ -448,7 +448,7 @@
 	"image": "corgi.png",
 	"format": "RGBA8888",
 	"size": {"w":56,"h":1728},
-	"scale": "1",
+	"scale": "0.5",
 	"smartupdate": "$TexturePacker:SmartUpdate:1c5ddcc15ac84ebbb29892601d3b3ef6:30bf3cd0705f6268fa1729df2bd3df09:729adc6043343cfda41c447ce8f464d6$"
 }
 }
