@@ -438,7 +438,7 @@
 	"run": ["run/run1.png","run/run2.png","run/run3.png","run/run4.png","run/run5.png","run/run6.png","run/run7.png","run/run8.png"],
 	"sit-loop": ["sit-loop/sit-loop1.png","sit-loop/sit-loop2.png","sit-loop/sit-loop3.png","sit-loop/sit-loop4.png","sit-loop/sit-loop5.png","sit-loop/sit-loop6.png"],
 	"sit-transition": ["sit-transition/sit-transition1.png","sit-transition/sit-transition2.png","sit-transition/sit-transition-3.png"],
-	"sniff&walkk": ["sniff&walk/sniff&walk1.png","sniff&walk/sniff&walk2.png","sniff&walk/sniff&walk3.png","sniff&walk/sniff&walk4.png","sniff&walk/sniff&walk5.png","sniff&walk/sniff&walk6.png","sniff&walk/sniff&walk7.png","sniff&walk/sniff&walk8.png"],
+	"sniff&walk": ["sniff&walk/sniff&walk1.png","sniff&walk/sniff&walk2.png","sniff&walk/sniff&walk3.png","sniff&walk/sniff&walk4.png","sniff&walk/sniff&walk5.png","sniff&walk/sniff&walk6.png","sniff&walk/sniff&walk7.png","sniff&walk/sniff&walk8.png"],
 	"sniff": ["sniff/sniff1.png","sniff/sniff2.png","sniff/sniff3.png","sniff/sniff4.png","sniff/sniff5.png","sniff/sniff6.png","sniff/sniff7.png","sniff/sniff8.png"],
 	"walk": ["walk/walk1.png","walk/walk2.png","walk/walk3.png","walk/walk4.png","walk/walk5.png"]
 },
