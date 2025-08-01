@@ -249,9 +249,9 @@
 	"sourceSize": {"w":36,"h":38}
 }},
 "animations": {
-	"idle/idle": ["idle/idle1.png","idle/idle2.png","idle/idle3.png","idle/idle4.png","idle/idle5.png","idle/idle6.png"],
-	"walk/walk": ["walk/walk1.png","walk/walk2.png","walk/walk3.png","walk/walk4.png","walk/walk5.png","walk/walk6.png","walk/walk7.png","walk/walk8.png","walk/walk9.png","walk/walk10.png","walk/walk11.png","walk/walk12.png","walk/walk13.png"],
-	"wave/idle": ["wave/idle1.png","wave/idle2.png","wave/idle3.png","wave/idle4.png","wave/idle5.png","wave/idle6.png","wave/idle7.png","wave/idle8.png","wave/idle9.png","wave/idle10.png","wave/idle11.png","wave/idle12.png"]
+	"idle": ["idle/idle1.png","idle/idle2.png","idle/idle3.png","idle/idle4.png","idle/idle5.png","idle/idle6.png"],
+	"walk": ["walk/walk1.png","walk/walk2.png","walk/walk3.png","walk/walk4.png","walk/walk5.png","walk/walk6.png","walk/walk7.png","walk/walk8.png","walk/walk9.png","walk/walk10.png","walk/walk11.png","walk/walk12.png","walk/walk13.png"],
+	"wave": ["wave/idle1.png","wave/idle2.png","wave/idle3.png","wave/idle4.png","wave/idle5.png","wave/idle6.png","wave/idle7.png","wave/idle8.png","wave/idle9.png","wave/idle10.png","wave/idle11.png","wave/idle12.png"]
 },
 "meta": {
 	"app": "https://www.codeandweb.com/texturepacker",
