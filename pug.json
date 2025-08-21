@@ -320,6 +320,106 @@
         "h": 32
       }
     },
+    "throw-away1.png": {
+      "frame": {
+        "x": 896,
+        "y": 0,
+        "w": 56,
+        "h": 32
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 56,
+        "h": 32
+      },
+      "sourceSize": {
+        "w": 56,
+        "h": 32
+      }
+    },
+    "throw-away2.png": {
+      "frame": {
+        "x": 952,
+        "y": 0,
+        "w": 56,
+        "h": 32
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 56,
+        "h": 32
+      },
+      "sourceSize": {
+        "w": 56,
+        "h": 32
+      }
+    },
+    "throw-away3.png": {
+      "frame": {
+        "x": 1008,
+        "y": 0,
+        "w": 56,
+        "h": 32
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 56,
+        "h": 32
+      },
+      "sourceSize": {
+        "w": 56,
+        "h": 32
+      }
+    },
+    "throw-away4.png": {
+      "frame": {
+        "x": 1064,
+        "y": 0,
+        "w": 56,
+        "h": 32
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 56,
+        "h": 32
+      },
+      "sourceSize": {
+        "w": 56,
+        "h": 32
+      }
+    },
+    "throw-away5.png": {
+      "frame": {
+        "x": 1120,
+        "y": 0,
+        "w": 56,
+        "h": 32
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 56,
+        "h": 32
+      },
+      "sourceSize": {
+        "w": 56,
+        "h": 32
+      }
+    },
     "sit1.png": {
       "frame": {
         "x": 1176,
@@ -1096,6 +1196,13 @@
       "jump11.png"
     ],
     "idle": ["idle1.png", "idle2.png", "idle3.png", "idle4.png", "idle5.png"],
+    "throw-away": [
+      "throw-away1.png",
+      "throw-away2.png",
+      "throw-away3.png",
+      "throw-away4.png",
+      "throw-away5.png"
+    ],
     "sit-transition": ["sit1.png", "sit2.png", "sit3.png"],
     "sit-loop": [
       "sit4.png",
