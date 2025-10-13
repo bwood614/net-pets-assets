@@ -1135,7 +1135,8 @@
       "sniff&walk6.png",
       "sniff&walk7.png",
       "sniff&walk8.png"
-    ]
+    ],
+    "sleep": ["idle1.png", "idle2.png", "idle3.png", "idle4.png", "idle5.png"]
   },
   "meta": {
     "app": "https://bwood614.github.io/net-pets-assets/",
