@@ -220,7 +220,7 @@
         "h": 32
       }
     },
-    "idle1.png": {
+    "throw-away1.png": {
       "frame": {
         "x": 616,
         "y": 0,
@@ -240,7 +240,7 @@
         "h": 32
       }
     },
-    "idle2.png": {
+    "throw-away2.png": {
       "frame": {
         "x": 672,
         "y": 0,
@@ -260,7 +260,7 @@
         "h": 32
       }
     },
-    "idle3.png": {
+    "throw-away3.png": {
       "frame": {
         "x": 728,
         "y": 0,
@@ -280,7 +280,7 @@
         "h": 32
       }
     },
-    "idle4.png": {
+    "throw-away4.png": {
       "frame": {
         "x": 784,
         "y": 0,
@@ -300,7 +300,7 @@
         "h": 32
       }
     },
-    "idle5.png": {
+    "throw-away5.png": {
       "frame": {
         "x": 840,
         "y": 0,
@@ -320,7 +320,7 @@
         "h": 32
       }
     },
-    "throw-away1.png": {
+    "idle1.png": {
       "frame": {
         "x": 896,
         "y": 0,
@@ -340,7 +340,7 @@
         "h": 32
       }
     },
-    "throw-away2.png": {
+    "idle2.png": {
       "frame": {
         "x": 952,
         "y": 0,
@@ -360,7 +360,7 @@
         "h": 32
       }
     },
-    "throw-away3.png": {
+    "idle3.png": {
       "frame": {
         "x": 1008,
         "y": 0,
@@ -380,7 +380,7 @@
         "h": 32
       }
     },
-    "throw-away4.png": {
+    "idle4.png": {
       "frame": {
         "x": 1064,
         "y": 0,
@@ -400,7 +400,7 @@
         "h": 32
       }
     },
-    "throw-away5.png": {
+    "idle5.png": {
       "frame": {
         "x": 1120,
         "y": 0,
