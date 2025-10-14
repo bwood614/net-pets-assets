@@ -1,6 +1,6 @@
 {
   "frames": {
-    "sit1": {
+    "sit01": {
       "frame": {
         "x": 0,
         "y": 0,
@@ -20,7 +20,7 @@
         "h": 32
       }
     },
-    "sit2": {
+    "sit02": {
       "frame": {
         "x": 56,
         "y": 0,
@@ -40,7 +40,7 @@
         "h": 32
       }
     },
-    "sit3": {
+    "sit03": {
       "frame": {
         "x": 112,
         "y": 0,
@@ -60,7 +60,7 @@
         "h": 32
       }
     },
-    "sit4": {
+    "sit04": {
       "frame": {
         "x": 168,
         "y": 0,
@@ -80,7 +80,7 @@
         "h": 32
       }
     },
-    "sit5": {
+    "sit05": {
       "frame": {
         "x": 224,
         "y": 0,
@@ -100,7 +100,7 @@
         "h": 32
       }
     },
-    "sit6": {
+    "sit06": {
       "frame": {
         "x": 280,
         "y": 0,
@@ -120,7 +120,7 @@
         "h": 32
       }
     },
-    "sit7": {
+    "sit07": {
       "frame": {
         "x": 336,
         "y": 0,
@@ -140,7 +140,7 @@
         "h": 32
       }
     },
-    "sit8": {
+    "sit08": {
       "frame": {
         "x": 392,
         "y": 0,
@@ -160,7 +160,7 @@
         "h": 32
       }
     },
-    "sit9": {
+    "sit09": {
       "frame": {
         "x": 448,
         "y": 0,
@@ -180,7 +180,7 @@
         "h": 32
       }
     },
-    "sleep1": {
+    "sleep01": {
       "frame": {
         "x": 0,
         "y": 32,
@@ -200,7 +200,7 @@
         "h": 32
       }
     },
-    "sleep2": {
+    "sleep02": {
       "frame": {
         "x": 56,
         "y": 32,
@@ -220,7 +220,7 @@
         "h": 32
       }
     },
-    "sleep3": {
+    "sleep03": {
       "frame": {
         "x": 112,
         "y": 32,
@@ -240,7 +240,7 @@
         "h": 32
       }
     },
-    "sleep4": {
+    "sleep04": {
       "frame": {
         "x": 168,
         "y": 32,
@@ -260,7 +260,7 @@
         "h": 32
       }
     },
-    "sleep5": {
+    "sleep05": {
       "frame": {
         "x": 224,
         "y": 32,
@@ -280,7 +280,7 @@
         "h": 32
       }
     },
-    "sleep6": {
+    "sleep06": {
       "frame": {
         "x": 280,
         "y": 32,
@@ -300,7 +300,7 @@
         "h": 32
       }
     },
-    "sleep7": {
+    "sleep07": {
       "frame": {
         "x": 336,
         "y": 32,
@@ -320,7 +320,7 @@
         "h": 32
       }
     },
-    "sleep8": {
+    "sleep08": {
       "frame": {
         "x": 392,
         "y": 32,
@@ -340,7 +340,7 @@
         "h": 32
       }
     },
-    "sleep9": {
+    "sleep09": {
       "frame": {
         "x": 448,
         "y": 32,
@@ -760,7 +760,7 @@
         "h": 32
       }
     },
-    "walk1": {
+    "walk01": {
       "frame": {
         "x": 0,
         "y": 64,
@@ -780,7 +780,7 @@
         "h": 32
       }
     },
-    "walk2": {
+    "walk02": {
       "frame": {
         "x": 56,
         "y": 64,
@@ -800,7 +800,7 @@
         "h": 32
       }
     },
-    "walk3": {
+    "walk03": {
       "frame": {
         "x": 112,
         "y": 64,
@@ -820,7 +820,7 @@
         "h": 32
       }
     },
-    "walk4": {
+    "walk04": {
       "frame": {
         "x": 168,
         "y": 64,
@@ -840,7 +840,7 @@
         "h": 32
       }
     },
-    "walk5": {
+    "walk05": {
       "frame": {
         "x": 224,
         "y": 64,
@@ -860,7 +860,7 @@
         "h": 32
       }
     },
-    "sniff1": {
+    "sniff01": {
       "frame": {
         "x": 0,
         "y": 96,
@@ -880,7 +880,7 @@
         "h": 32
       }
     },
-    "sniff2": {
+    "sniff02": {
       "frame": {
         "x": 56,
         "y": 96,
@@ -900,7 +900,7 @@
         "h": 32
       }
     },
-    "sniff3": {
+    "sniff03": {
       "frame": {
         "x": 112,
         "y": 96,
@@ -920,7 +920,7 @@
         "h": 32
       }
     },
-    "sniff4": {
+    "sniff04": {
       "frame": {
         "x": 168,
         "y": 96,
@@ -940,7 +940,7 @@
         "h": 32
       }
     },
-    "sniff5": {
+    "sniff05": {
       "frame": {
         "x": 224,
         "y": 96,
@@ -960,7 +960,7 @@
         "h": 32
       }
     },
-    "sniff6": {
+    "sniff06": {
       "frame": {
         "x": 280,
         "y": 96,
@@ -980,7 +980,7 @@
         "h": 32
       }
     },
-    "sniff7": {
+    "sniff07": {
       "frame": {
         "x": 336,
         "y": 96,
@@ -1000,7 +1000,7 @@
         "h": 32
       }
     },
-    "sniff8": {
+    "sniff08": {
       "frame": {
         "x": 392,
         "y": 96,
@@ -1020,7 +1020,7 @@
         "h": 32
       }
     },
-    "run1": {
+    "run01": {
       "frame": {
         "x": 0,
         "y": 128,
@@ -1040,7 +1040,7 @@
         "h": 32
       }
     },
-    "run2": {
+    "run02": {
       "frame": {
         "x": 56,
         "y": 128,
@@ -1060,7 +1060,7 @@
         "h": 32
       }
     },
-    "run3": {
+    "run03": {
       "frame": {
         "x": 112,
         "y": 128,
@@ -1080,7 +1080,7 @@
         "h": 32
       }
     },
-    "run4": {
+    "run04": {
       "frame": {
         "x": 168,
         "y": 128,
@@ -1100,7 +1100,7 @@
         "h": 32
       }
     },
-    "run5": {
+    "run05": {
       "frame": {
         "x": 224,
         "y": 128,
@@ -1120,7 +1120,7 @@
         "h": 32
       }
     },
-    "run6": {
+    "run06": {
       "frame": {
         "x": 280,
         "y": 128,
@@ -1140,7 +1140,7 @@
         "h": 32
       }
     },
-    "run7": {
+    "run07": {
       "frame": {
         "x": 336,
         "y": 128,
@@ -1160,7 +1160,7 @@
         "h": 32
       }
     },
-    "run8": {
+    "run08": {
       "frame": {
         "x": 392,
         "y": 128,
@@ -1180,7 +1180,7 @@
         "h": 32
       }
     },
-    "jump1": {
+    "jump01": {
       "frame": {
         "x": 0,
         "y": 160,
@@ -1200,7 +1200,7 @@
         "h": 32
       }
     },
-    "jump2": {
+    "jump02": {
       "frame": {
         "x": 56,
         "y": 160,
@@ -1220,7 +1220,7 @@
         "h": 32
       }
     },
-    "jump3": {
+    "jump03": {
       "frame": {
         "x": 112,
         "y": 160,
@@ -1240,7 +1240,7 @@
         "h": 32
       }
     },
-    "jump4": {
+    "jump04": {
       "frame": {
         "x": 168,
         "y": 160,
@@ -1260,7 +1260,7 @@
         "h": 32
       }
     },
-    "jump5": {
+    "jump05": {
       "frame": {
         "x": 224,
         "y": 160,
@@ -1280,7 +1280,7 @@
         "h": 32
       }
     },
-    "jump6": {
+    "jump06": {
       "frame": {
         "x": 280,
         "y": 160,
@@ -1300,7 +1300,7 @@
         "h": 32
       }
     },
-    "jump7": {
+    "jump07": {
       "frame": {
         "x": 336,
         "y": 160,
@@ -1320,7 +1320,7 @@
         "h": 32
       }
     },
-    "jump8": {
+    "jump08": {
       "frame": {
         "x": 392,
         "y": 160,
@@ -1340,7 +1340,7 @@
         "h": 32
       }
     },
-    "jump9": {
+    "jump09": {
       "frame": {
         "x": 448,
         "y": 160,
@@ -1400,7 +1400,7 @@
         "h": 32
       }
     },
-    "sniff&walk1": {
+    "sniff&walk01": {
       "frame": {
         "x": 0,
         "y": 192,
@@ -1420,7 +1420,7 @@
         "h": 32
       }
     },
-    "sniff&walk2": {
+    "sniff&walk02": {
       "frame": {
         "x": 56,
         "y": 192,
@@ -1440,7 +1440,7 @@
         "h": 32
       }
     },
-    "sniff&walk3": {
+    "sniff&walk03": {
       "frame": {
         "x": 112,
         "y": 192,
@@ -1460,7 +1460,7 @@
         "h": 32
       }
     },
-    "sniff&walk4": {
+    "sniff&walk04": {
       "frame": {
         "x": 168,
         "y": 192,
@@ -1480,7 +1480,7 @@
         "h": 32
       }
     },
-    "sniff&walk5": {
+    "sniff&walk05": {
       "frame": {
         "x": 224,
         "y": 192,
@@ -1500,7 +1500,7 @@
         "h": 32
       }
     },
-    "sniff&walk6": {
+    "sniff&walk06": {
       "frame": {
         "x": 280,
         "y": 192,
@@ -1520,7 +1520,7 @@
         "h": 32
       }
     },
-    "sniff&walk7": {
+    "sniff&walk07": {
       "frame": {
         "x": 336,
         "y": 192,
@@ -1540,7 +1540,7 @@
         "h": 32
       }
     },
-    "sniff&walk8": {
+    "sniff&walk08": {
       "frame": {
         "x": 392,
         "y": 192,
@@ -1560,7 +1560,7 @@
         "h": 32
       }
     },
-    "idle1": {
+    "idle01": {
       "frame": {
         "x": 0,
         "y": 224,
@@ -1580,7 +1580,7 @@
         "h": 32
       }
     },
-    "idle2": {
+    "idle02": {
       "frame": {
         "x": 56,
         "y": 224,
@@ -1600,7 +1600,7 @@
         "h": 32
       }
     },
-    "idle3": {
+    "idle03": {
       "frame": {
         "x": 112,
         "y": 224,
@@ -1620,7 +1620,7 @@
         "h": 32
       }
     },
-    "idle4": {
+    "idle04": {
       "frame": {
         "x": 168,
         "y": 224,
@@ -1640,7 +1640,7 @@
         "h": 32
       }
     },
-    "idle5": {
+    "idle05": {
       "frame": {
         "x": 224,
         "y": 224,
@@ -1662,18 +1662,18 @@
     }
   },
   "animations": {
-    "sit-transition": ["sit1", "sit2", "sit3"],
-    "sit-loop": ["sit4", "sit5", "sit6", "sit7", "sit8", "sit9"],
+    "sit-transition": ["sit01", "sit02", "sit03"],
+    "sit-loop": ["sit04", "sit05", "sit06", "sit07", "sit08", "sit09"],
     "sleep": [
-      "sleep1",
-      "sleep2",
-      "sleep3",
-      "sleep4",
-      "sleep5",
-      "sleep6",
-      "sleep7",
-      "sleep8",
-      "sleep9",
+      "sleep01",
+      "sleep02",
+      "sleep03",
+      "sleep04",
+      "sleep05",
+      "sleep06",
+      "sleep07",
+      "sleep08",
+      "sleep09",
       "sleep10",
       "sleep11",
       "sleep12",
@@ -1695,42 +1695,51 @@
       "sleep28",
       "sleep29"
     ],
-    "walk": ["walk1", "walk2", "walk3", "walk4", "walk5"],
+    "walk": ["walk01", "walk02", "walk03", "walk04", "walk05"],
     "sniff": [
-      "sniff1",
-      "sniff2",
-      "sniff3",
-      "sniff4",
-      "sniff5",
-      "sniff6",
-      "sniff7",
-      "sniff8"
+      "sniff01",
+      "sniff02",
+      "sniff03",
+      "sniff04",
+      "sniff05",
+      "sniff06",
+      "sniff07",
+      "sniff08"
     ],
-    "run": ["run1", "run2", "run3", "run4", "run5", "run6", "run7", "run8"],
+    "run": [
+      "run01",
+      "run02",
+      "run03",
+      "run04",
+      "run05",
+      "run06",
+      "run07",
+      "run08"
+    ],
     "jump": [
-      "jump1",
-      "jump2",
-      "jump3",
-      "jump4",
-      "jump5",
-      "jump6",
-      "jump7",
-      "jump8",
-      "jump9",
+      "jump01",
+      "jump02",
+      "jump03",
+      "jump04",
+      "jump05",
+      "jump06",
+      "jump07",
+      "jump08",
+      "jump09",
       "jump10",
       "jump11"
     ],
     "sniff&walk": [
-      "sniff&walk1",
-      "sniff&walk2",
-      "sniff&walk3",
-      "sniff&walk4",
-      "sniff&walk5",
-      "sniff&walk6",
-      "sniff&walk7",
-      "sniff&walk8"
+      "sniff&walk01",
+      "sniff&walk02",
+      "sniff&walk03",
+      "sniff&walk04",
+      "sniff&walk05",
+      "sniff&walk06",
+      "sniff&walk07",
+      "sniff&walk08"
     ],
-    "idle": ["idle1", "idle2", "idle3", "idle4", "idle5"]
+    "idle": ["idle01", "idle02", "idle03", "idle04", "idle05"]
   },
   "meta": {
     "app": "https://bwood614.github.io/net-pets-assets/",
