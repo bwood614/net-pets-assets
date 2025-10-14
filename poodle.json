@@ -1662,17 +1662,8 @@
     }
   },
   "animations": {
-    "sit": [
-      "sit1",
-      "sit2",
-      "sit3",
-      "sit4",
-      "sit5",
-      "sit6",
-      "sit7",
-      "sit8",
-      "sit9"
-    ],
+    "sit-transition": ["sit1", "sit2", "sit3"],
+    "sit-loop": ["sit4", "sit5", "sit6", "sit7", "sit8", "sit9"],
     "sleep": [
       "sleep1",
       "sleep2",
