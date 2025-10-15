@@ -2,7 +2,9 @@ const fs = require("fs");
 
 const args = process.argv;
 
-// To get only the custom arguments:
+// Arguments
+// arg1 -> file path to json
+// arg2 -> name of the png file the json describes
 const customArgs = args.slice(2);
 
 const jsonFilePath = customArgs[0];
