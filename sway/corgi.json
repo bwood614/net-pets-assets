@@ -1055,6 +1055,6 @@
     "image": "corgi.png",
     "format": "RGBA8888",
     "size": {"w": 560, "h": 3248},
-    "scale": "1"
+    "scale": "0.5"
   }
 }
