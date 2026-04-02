@@ -1,0 +1,154 @@
+{
+  "petTypeId": "corgi",
+  "animations": {
+    "idle": {
+      "movementSpeed": {"x": 0, "y": 0},
+      "animationSpeed": 0.2,
+      "doesLoop": true,
+      "transitionRules": {
+        "minSeconds": 5,
+        "maxSeconds": 10,
+        "nextAnimations": ["walk", "sniff", "sniff&walk", "sit-transition"],
+        "canTurn": true
+      }
+    },
+    "drop-transition": {
+      "movementSpeed": {"x": 0, "y": 0},
+      "animationSpeed": 0.4,
+      "doesLoop": true,
+      "transitionRules": {
+        "minSeconds": 4,
+        "maxSeconds": 10,
+        "nextAnimations": ["walk", "run"],
+        "canTurn": true
+      }
+    },
+    "pickup-transition": {
+      "movementSpeed": {"x": 0, "y": 0},
+      "animationSpeed": 0.5,
+      "doesLoop": false
+    },
+    "sleep": {
+      "movementSpeed": {"x": 0, "y": 0},
+      "animationSpeed": 0.2,
+      "doesLoop": true
+    },
+    "sway-far-left": {
+      "movementSpeed": {"x": 0, "y": 0},
+      "animationSpeed": 0.2,
+      "doesLoop": false
+    },
+    "sway-left": {
+      "movementSpeed": {"x": 0, "y": 0},
+      "animationSpeed": 0.2,
+      "doesLoop": false
+    },
+    "sway-center": {
+      "movementSpeed": {"x": 0, "y": 0},
+      "animationSpeed": 0.2,
+      "doesLoop": false
+    },
+    "sway-right": {
+      "movementSpeed": {"x": 0, "y": 0},
+      "animationSpeed": 0.2,
+      "doesLoop": false
+    },
+    "sway-far-right": {
+      "movementSpeed": {"x": 0, "y": 0},
+      "animationSpeed": 0.2,
+      "doesLoop": false
+    },
+    "none": {
+      "movementSpeed": {"x": 0, "y": 0},
+      "animationSpeed": 0.2,
+      "doesLoop": true,
+      "transitionRules": {
+        "minSeconds": 2,
+        "maxSeconds": 5,
+        "nextAnimations": ["idle"],
+        "canTurn": false
+      }
+    },
+    "walk": {
+      "movementSpeed": {"x": 80, "y": 0},
+      "animationSpeed": 0.2,
+      "doesLoop": true,
+      "transitionRules": {
+        "minSeconds": 3,
+        "maxSeconds": 8,
+        "nextAnimations": [
+          "idle",
+          "run",
+          "sniff",
+          "sniff&walk",
+          "sit-transition"
+        ],
+        "canTurn": true
+      }
+    },
+    "sniff": {
+      "movementSpeed": {"x": 80, "y": 0},
+      "animationSpeed": 0.2,
+      "doesLoop": true,
+      "transitionRules": {
+        "minSeconds": 1,
+        "maxSeconds": 2,
+        "nextAnimations": ["idle", "walk", "sniff&walk", "sit-transition"],
+        "canTurn": false
+      }
+    },
+    "run": {
+      "movementSpeed": {"x": 140, "y": 0},
+      "animationSpeed": 0.2,
+      "doesLoop": true,
+      "transitionRules": {
+        "minSeconds": 2,
+        "maxSeconds": 6,
+        "nextAnimations": ["jump", "walk", "sit-transition"],
+        "canTurn": false
+      }
+    },
+    "sit-transition": {
+      "movementSpeed": {"x": 0, "y": 0},
+      "animationSpeed": 0.2,
+      "doesLoop": false,
+      "transitionRules": {
+        "nextAnimations": ["sit-loop"],
+        "canTurn": false
+      }
+    },
+    "sit-loop": {
+      "movementSpeed": {"x": 0, "y": 0},
+      "animationSpeed": 0.2,
+      "doesLoop": true,
+      "transitionRules": {
+        "minSeconds": 10,
+        "maxSeconds": 20,
+        "nextAnimations": ["idle", "walk", "sniff", "sniff&walk"],
+        "canTurn": false
+      }
+    },
+    "sniff&walk": {
+      "movementSpeed": {"x": 80, "y": 0},
+      "animationSpeed": 0.2,
+      "doesLoop": true,
+      "transitionRules": {
+        "minSeconds": 2,
+        "maxSeconds": 5,
+        "nextAnimations": ["idle", "walk", "sniff", "sit-transition"],
+        "canTurn": true
+      }
+    },
+    "jump": {
+      "movementSpeed": {"x": 140, "y": 0},
+      "animationSpeed": 0.2,
+      "doesLoop": true,
+      "transitionRules": {
+        "minSeconds": 3,
+        "maxSeconds": 5,
+        "nextAnimations": ["walk", "run"],
+        "canTurn": false
+      }
+    }
+  }
+}
