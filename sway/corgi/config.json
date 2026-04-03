@@ -1,5 +1,8 @@
 {
   "petTypeId": "corgi",
+  "callOutAnimation": "run",
+  "goToSleepAnimation": "walk",
+  "followAnimation": "walk",
   "animations": {
     "idle": {
       "movementSpeed": {"x": 0, "y": 0},
@@ -87,7 +90,7 @@
       }
     },
     "sniff": {
-      "movementSpeed": {"x": 80, "y": 0},
+      "movementSpeed": {"x": 0, "y": 0},
       "animationSpeed": 0.2,
       "doesLoop": true,
       "transitionRules": {
@@ -136,7 +139,7 @@
         "minSeconds": 2,
         "maxSeconds": 5,
         "nextAnimations": ["idle", "walk", "sniff", "sit-transition"],
-        "canTurn": true
+        "canTurn": false
       }
     },
     "jump": {
