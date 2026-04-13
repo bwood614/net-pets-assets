@@ -1111,6 +1111,22 @@
       "drag-transition3",
       "drag-transition4",
       "drag-transition5"
+    ],
+    "test-state-machine": [
+      "walk0",
+      "walk1",
+      "walk2",
+      "walk3",
+      "walk4",
+      "sit-transition0",
+      "sit-transition1",
+      "sit-transition2",
+      "sit-loop0",
+      "sit-loop1",
+      "sit-loop2",
+      "sit-loop3",
+      "sit-loop4",
+      "sit-loop5"
     ]
   },
   "meta": {
