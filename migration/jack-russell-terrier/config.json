@@ -3,7 +3,7 @@
   "callOutAnimation": "walk",
   "goToSleepAnimation": "walk",
   "followAnimation": "walk",
-  "animations": {
+  "terminalAnimations": {
     "idle": {
       "movementSpeed": { "x": 0, "y": 0 },
       "wanderRules": {
@@ -97,7 +97,7 @@
       }
     },
     "walk": {
-      "movementSpeed": { "x": 80, "y": 0 },
+      "movementSpeed": { "x": 70, "y": 0 },
       "wanderRules": {
         "minSeconds": 3,
         "maxSeconds": 8,
@@ -172,7 +172,13 @@
       "wanderRules": {
         "minSeconds": 10,
         "maxSeconds": 20,
-        "nextIntent": ["idle", "walk", "idle&sniff", "walk&sniff"],
+        "nextIntent": [
+          "idle",
+          "walk",
+          "idle&sniff",
+          "walk&sniff",
+          "sit&lookBack"
+        ],
         "canTurn": false
       },
       "intentTransitions": {
@@ -199,7 +205,7 @@
       }
     },
     "walk&sniff": {
-      "movementSpeed": { "x": 80, "y": 0 },
+      "movementSpeed": { "x": 70, "y": 0 },
       "wanderRules": {
         "minSeconds": 2,
         "maxSeconds": 5,
@@ -259,6 +265,50 @@
         "sit&lookBack-to-sit": "sit-to-sit&lookBack",
         "sleep": "sleep-to-sit"
       }
+    }
+  },
+  "transitionAnimations": {
+    "idle-to-idle&sniff": {
+      "movementSpeed": { "x": 0, "y": 0 }
+    },
+    "idle&sniff-to-idle": {
+      "movementSpeed": { "x": 0, "y": 0 }
+    },
+    "idle&sniff-to-walk&sniff": {
+      "movementSpeed": { "x": 0, "y": 0 }
+    },
+    "walk&sniff-to-idle&sniff": {
+      "movementSpeed": { "x": 35, "y": 0 }
+    },
+    "idle-to-walk": {
+      "movementSpeed": { "x": 0, "y": 0 }
+    },
+    "walk-to-idle": {
+      "movementSpeed": { "x": 35, "y": 0 }
+    },
+    "idle-to-sit": {
+      "movementSpeed": { "x": 0, "y": 0 }
+    },
+    "sit-to-idle": {
+      "movementSpeed": { "x": 0, "y": 0 }
+    },
+    "sit-to-sleep": {
+      "movementSpeed": { "x": 0, "y": 0 }
+    },
+    "sleep-to-sit": {
+      "movementSpeed": { "x": 0, "y": 0 }
+    },
+    "walk&sniff-to-walk": {
+      "movementSpeed": { "x": 0, "y": 0 }
+    },
+    "walk-to-walk&sniff": {
+      "movementSpeed": { "x": 0, "y": 0 }
+    },
+    "sit-to-sit&lookBack": {
+      "movementSpeed": { "x": 0, "y": 0 }
+    },
+    "sit&lookBack-to-sit": {
+      "movementSpeed": { "x": 0, "y": 0 }
     }
   }
 }
