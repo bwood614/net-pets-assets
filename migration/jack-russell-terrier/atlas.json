@@ -847,63 +847,63 @@
       "spriteSourceSize": { "x": 0, "y": 0, "w": 58, "h": 52 },
       "sourceSize": { "w": 58, "h": 52 }
     },
-    "sway0": {
+    "swayBack4": {
       "frame": { "x": 290, "y": 364, "w": 58, "h": 52 },
       "rotated": false,
       "trimmed": false,
       "spriteSourceSize": { "x": 0, "y": 0, "w": 58, "h": 52 },
       "sourceSize": { "w": 58, "h": 52 }
     },
-    "sway1": {
+    "swayBack3": {
       "frame": { "x": 348, "y": 364, "w": 58, "h": 52 },
       "rotated": false,
       "trimmed": false,
       "spriteSourceSize": { "x": 0, "y": 0, "w": 58, "h": 52 },
       "sourceSize": { "w": 58, "h": 52 }
     },
-    "sway2": {
+    "swayBack2": {
       "frame": { "x": 406, "y": 364, "w": 58, "h": 52 },
       "rotated": false,
       "trimmed": false,
       "spriteSourceSize": { "x": 0, "y": 0, "w": 58, "h": 52 },
       "sourceSize": { "w": 58, "h": 52 }
     },
-    "sway3": {
+    "swayBack1": {
       "frame": { "x": 464, "y": 364, "w": 58, "h": 52 },
       "rotated": false,
       "trimmed": false,
       "spriteSourceSize": { "x": 0, "y": 0, "w": 58, "h": 52 },
       "sourceSize": { "w": 58, "h": 52 }
     },
-    "sway4": {
+    "swayCenter": {
       "frame": { "x": 522, "y": 364, "w": 58, "h": 52 },
       "rotated": false,
       "trimmed": false,
       "spriteSourceSize": { "x": 0, "y": 0, "w": 58, "h": 52 },
       "sourceSize": { "w": 58, "h": 52 }
     },
-    "sway5": {
+    "swayForward1": {
       "frame": { "x": 0, "y": 416, "w": 58, "h": 52 },
       "rotated": false,
       "trimmed": false,
       "spriteSourceSize": { "x": 0, "y": 0, "w": 58, "h": 52 },
       "sourceSize": { "w": 58, "h": 52 }
     },
-    "sway6": {
+    "swayForward2": {
       "frame": { "x": 58, "y": 416, "w": 58, "h": 52 },
       "rotated": false,
       "trimmed": false,
       "spriteSourceSize": { "x": 0, "y": 0, "w": 58, "h": 52 },
       "sourceSize": { "w": 58, "h": 52 }
     },
-    "sway7": {
+    "swayForward3": {
       "frame": { "x": 116, "y": 416, "w": 58, "h": 52 },
       "rotated": false,
       "trimmed": false,
       "spriteSourceSize": { "x": 0, "y": 0, "w": 58, "h": 52 },
       "sourceSize": { "w": 58, "h": 52 }
     },
-    "sway8": {
+    "swayForward4": {
       "frame": { "x": 174, "y": 416, "w": 58, "h": 52 },
       "rotated": false,
       "trimmed": false,
@@ -1048,17 +1048,15 @@
       "sleep19",
       "sleep20"
     ],
-    "sway": [
-      "sway0",
-      "sway1",
-      "sway2",
-      "sway3",
-      "sway4",
-      "sway5",
-      "sway6",
-      "sway7",
-      "sway8"
-    ]
+    "swayBack4": ["swayBack4"],
+    "swayBack3": ["swayBack3"],
+    "swayBack2": ["swayBack2"],
+    "swayBack1": ["swayBack1"],
+    "swayCenter": ["swayCenter"],
+    "swayForward1": ["swayForward1"],
+    "swayForward2": ["swayForward2"],
+    "swayForward3": ["swayForward3"],
+    "swayForward4": ["swayForward4"]
   },
   "meta": {
     "app": "https://www.aseprite.org/",
