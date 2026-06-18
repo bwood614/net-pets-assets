@@ -112,7 +112,7 @@
       }
     },
     "walk": {
-      "movementSpeed": { "x": 1.2, "y": 0 },
+      "movementSpeed": { "x": 0.8, "y": 0 },
       "wanderRules": {
         "minSeconds": 3,
         "maxSeconds": 8,

@@ -110,7 +110,7 @@
       }
     },
     "walk": {
-      "movementSpeed": { "x": 1.2, "y": 0 },
+      "movementSpeed": { "x": 1, "y": 0 },
       "wanderRules": {
         "minSeconds": 3,
         "maxSeconds": 8,
@@ -218,7 +218,7 @@
       }
     },
     "walk&sniff": {
-      "movementSpeed": { "x": 1.2, "y": 0 },
+      "movementSpeed": { "x": 1, "y": 0 },
       "wanderRules": {
         "minSeconds": 2,
         "maxSeconds": 5,
@@ -289,13 +289,13 @@
       "movementSpeed": { "x": 0, "y": 0 }
     },
     "walk&sniff-to-idle&sniff": {
-      "movementSpeed": { "x": 0.6, "y": 0 }
+      "movementSpeed": { "x": 0.5, "y": 0 }
     },
     "idle-to-walk": {
       "movementSpeed": { "x": 0, "y": 0 }
     },
     "walk-to-idle": {
-      "movementSpeed": { "x": 0.6, "y": 0 }
+      "movementSpeed": { "x": 0.5, "y": 0 }
     },
     "idle-to-sit": {
       "movementSpeed": { "x": 0, "y": 0 }
