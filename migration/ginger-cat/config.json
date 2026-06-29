@@ -3,7 +3,7 @@
   "callOutAnimation": "walk",
   "goToSleepAnimation": "walk",
   "followAnimation": "walk",
-  "dragOffset": { "x": -20, "y": 20 },
+  "dragOffset": { "x": 20, "y": 20 },
   "animations": {
     "idle": {
       "movementSpeed": { "x": 0, "y": 0 },
