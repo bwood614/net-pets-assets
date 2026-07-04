@@ -10,95 +10,21 @@
       "wanderRules": {
         "minSeconds": 5,
         "maxSeconds": 10,
-        "nextIntent": ["walk", "idle&sniff", "walk&sniff", "sit"],
+        "nextIntent": ["walk", "idle&sniff", "sit", "idle&lookBack"],
         "canTurn": true
       },
-      "intentTransitions": {
-        "idle-to-idle&sniff": "idle&sniff-to-idle",
-        "idle&sniff-to-idle": "idle",
-        "idle&sniff-to-walk&sniff": "walk&sniff-to-idle&sniff",
-        "walk&sniff-to-idle&sniff": "idle&sniff-to-idle",
-        "idle-to-walk": "walk-to-idle",
-        "walk-to-idle": "idle",
-        "idle-to-sit": "sit-to-idle",
-        "sit-to-idle": "idle",
-        "sit-to-sleep": "sleep-to-sit",
-        "sleep-to-sit": "sit-to-idle",
-        "walk&sniff-to-walk": "walk-to-idle",
-        "walk-to-walk&sniff": "walk&sniff-to-idle&sniff",
-        "idle&sniff": "idle&sniff-to-idle",
-        "walk": "walk-to-idle",
-        "walk&sniff": "walk&sniff-to-idle&sniff",
-        "sit": "sit-to-idle",
-        "sit-to-sit&lookBack": "sit&lookBack-to-sit",
-        "sit&lookBack-to-sit": "sit-to-idle",
-        "sit&lookBack": "sit&lookBack-to-sit",
-        "sleep": "sleep-to-sit"
+      "animationTransitions": {
+        "walk": "idle-to-walk",
+        "idle&sniff": "idle-to-idle&sniff",
+        "sit": "idle-to-sit",
+        "idle&lookBack": "idle-to-idle&lookBack"
       }
     },
     "sleep": {
       "movementSpeed": { "x": 0, "y": 0 },
-      "intentTransitions": {
-        "idle-to-idle&sniff": "idle&sniff-to-idle",
-        "idle&sniff-to-idle": "idle-to-sit",
-        "idle&sniff-to-walk&sniff": "walk&sniff-to-idle&sniff",
-        "walk&sniff-to-idle&sniff": "idle&sniff-to-idle",
-        "idle-to-walk": "walk-to-idle",
-        "walk-to-idle": "idle-to-sit",
-        "idle-to-sit": "sit-to-sleep",
-        "sit-to-idle": "idle-to-sit",
-        "sit-to-sleep": "sleep",
-        "sleep-to-sit": "sit-to-sleep",
-        "walk&sniff-to-walk": "walk-to-idle",
-        "walk-to-walk&sniff": "walk&sniff-to-idle&sniff",
-        "idle": "idle-to-sit",
-        "idle&sniff": "idle&sniff-to-idle",
-        "walk": "walk-to-idle",
-        "walk&sniff": "walk&sniff-to-idle&sniff",
-        "sit": "sit-to-sleep",
-        "sit-to-sit&lookBack": "sit&lookBack-to-sit",
-        "sit&lookBack-to-sit": "sit-to-sleep",
-        "sit&lookBack": "sit&lookBack-to-sit"
+      "animationTransitions": {
+        "sit": "sleep-to-sit"
       }
-    },
-    "drop-transition": {
-      "movementSpeed": { "x": 0, "y": 0 },
-      "wanderRules": {
-        "minSeconds": 4,
-        "maxSeconds": 10,
-        "nextIntent": ["walk", "idle"],
-        "canTurn": true
-      }
-    },
-    "pickup-transition": {
-      "movementSpeed": { "x": 0, "y": 0 }
-    },
-    "swayBack4": {
-      "movementSpeed": { "x": 0, "y": 0 }
-    },
-    "swayBack3": {
-      "movementSpeed": { "x": 0, "y": 0 }
-    },
-    "swayBack2": {
-      "movementSpeed": { "x": 0, "y": 0 }
-    },
-    "swayBack1": {
-      "movementSpeed": { "x": 0, "y": 0 }
-    },
-    "swayCenter": {
-      "movementSpeed": { "x": 0, "y": 0 }
-    },
-    "swayForward1": {
-      "movementSpeed": { "x": 0, "y": 0 }
-    },
-    "swayForward2": {
-      "movementSpeed": { "x": 0, "y": 0 }
-    },
-    "swayForward3": {
-      "movementSpeed": { "x": 0, "y": 0 }
-    },
-    "swayForward4": {
-      "movementSpeed": { "x": 0, "y": 0 }
     },
     "none": {
       "movementSpeed": { "x": 0, "y": 0 },
@@ -114,30 +40,11 @@
       "wanderRules": {
         "minSeconds": 3,
         "maxSeconds": 8,
-        "nextIntent": ["idle", "idle&sniff", "walk&sniff", "sit"],
+        "nextIntent": ["idle"],
         "canTurn": true
       },
-      "intentTransitions": {
-        "idle-to-idle&sniff": "idle&sniff-to-idle",
-        "idle&sniff-to-idle": "idle-to-walk",
-        "idle&sniff-to-walk&sniff": "walk&sniff-to-walk",
-        "walk&sniff-to-idle&sniff": "idle&sniff-to-idle",
-        "idle-to-walk": "walk",
-        "walk-to-idle": "idle-to-walk",
-        "idle-to-sit": "sit-to-idle",
-        "sit-to-idle": "idle-to-walk",
-        "sit-to-sleep": "sleep-to-sit",
-        "sleep-to-sit": "sit-to-idle",
-        "walk&sniff-to-walk": "walk",
-        "walk-to-walk&sniff": "walk&sniff-to-walk",
-        "idle": "idle-to-walk",
-        "idle&sniff": "idle&sniff-to-idle",
-        "walk&sniff": "walk&sniff-to-walk",
-        "sit": "sit-to-idle",
-        "sit-to-sit&lookBack": "sit&lookBack-to-sit",
-        "sit&lookBack-to-sit": "sit-to-idle",
-        "sit&lookBack": "sit&lookBack-to-sit",
-        "sleep": "sleep-to-sit"
+      "animationTransitions": {
+        "idle": "walk-to-idle"
       }
     },
     "idle&sniff": {
@@ -145,39 +52,12 @@
       "wanderRules": {
         "minSeconds": 1,
         "maxSeconds": 2,
-        "nextIntent": ["idle", "walk", "walk&sniff", "sit"],
+        "nextIntent": ["idle", "walk&sniff"],
         "canTurn": false
       },
-      "intentTransitions": {
-        "idle-to-idle&sniff": "idle&sniff",
-        "idle&sniff-to-idle": "idle-to-idle&sniff",
-        "idle&sniff-to-walk&sniff": "walk&sniff-to-idle&sniff",
-        "walk&sniff-to-idle&sniff": "idle&sniff",
-        "idle-to-walk": "walk-to-idle",
-        "walk-to-idle": "idle-to-idle&sniff",
-        "idle-to-sit": "sit-to-idle",
-        "sit-to-idle": "idle-to-idle&sniff",
-        "sit-to-sleep": "sleep-to-sit",
-        "sleep-to-sit": "sit-to-idle",
-        "walk&sniff-to-walk": "walk-to-idle",
-        "walk-to-walk&sniff": "walk&sniff-to-idle&sniff",
-        "idle": "idle-to-idle&sniff",
-        "walk": "walk-to-idle",
-        "walk&sniff": "walk&sniff-to-idle&sniff",
-        "sit": "sit-to-idle",
-        "sit-to-sit&lookBack": "sit&lookBack-to-sit",
-        "sit&lookBack-to-sit": "sit-to-idle",
-        "sit&lookBack": "sit&lookBack-to-sit",
-        "sleep": "sleep-to-sit"
-      }
-    },
-    "twirl": {
-      "movementSpeed": { "x": 0, "y": 0 },
-      "wanderRules": {
-        "minSeconds": 1,
-        "maxSeconds": 2,
-        "nextIntent": ["idle", "walk", "walk&sniff", "sit"],
-        "canTurn": false
+      "animationTransitions": {
+        "idle": "idle&sniff-to-idle",
+        "walk&sniff": "idle&sniff-to-walk&sniff"
       }
     },
     "sit": {
@@ -185,36 +65,12 @@
       "wanderRules": {
         "minSeconds": 10,
         "maxSeconds": 20,
-        "nextIntent": [
-          "idle",
-          "walk",
-          "idle&sniff",
-          "walk&sniff",
-          "sit&lookBack"
-        ],
+        "nextIntent": ["idle", "sit&lookBack"],
         "canTurn": false
       },
-      "intentTransitions": {
-        "idle-to-idle&sniff": "idle&sniff-to-idle",
-        "idle&sniff-to-idle": "idle-to-sit",
-        "idle&sniff-to-walk&sniff": "walk&sniff-to-idle&sniff",
-        "walk&sniff-to-idle&sniff": "idle&sniff-to-idle",
-        "idle-to-walk": "walk-to-idle",
-        "walk-to-idle": "idle-to-sit",
-        "idle-to-sit": "sit",
-        "sit-to-idle": "idle-to-sit",
-        "sit-to-sleep": "sleep-to-sit",
-        "sleep-to-sit": "sit",
-        "walk&sniff-to-walk": "walk-to-idle",
-        "walk-to-walk&sniff": "walk&sniff-to-idle&sniff",
-        "idle": "idle-to-sit",
-        "idle&sniff": "idle&sniff-to-idle",
-        "walk": "walk-to-idle",
-        "walk&sniff": "walk&sniff-to-idle&sniff",
-        "sit-to-sit&lookBack": "sit&lookBack-to-sit",
-        "sit&lookBack-to-sit": "sit",
-        "sit&lookBack": "sit&lookBack-to-sit",
-        "sleep": "sleep-to-sit"
+      "animationTransitions": {
+        "idle": "sit-to-idle",
+        "sit&lookBack": "sit-to-sit&lookBack"
       }
     },
     "walk&sniff": {
@@ -222,30 +78,12 @@
       "wanderRules": {
         "minSeconds": 2,
         "maxSeconds": 5,
-        "nextIntent": ["idle", "walk", "idle&sniff", "sit"],
+        "nextIntent": ["walk", "idle&sniff"],
         "canTurn": false
       },
-      "intentTransitions": {
-        "idle-to-idle&sniff": "idle&sniff-to-walk&sniff",
-        "idle&sniff-to-idle": "idle-to-idle&sniff",
-        "idle&sniff-to-walk&sniff": "walk&sniff",
-        "walk&sniff-to-idle&sniff": "idle&sniff-to-walk&sniff",
-        "idle-to-walk": "walk-to-walk&sniff",
-        "walk-to-idle": "idle-to-idle&sniff",
-        "idle-to-sit": "sit-to-idle",
-        "sit-to-idle": "idle-to-idle&sniff",
-        "sit-to-sleep": "sleep-to-sit",
-        "sleep-to-sit": "sit-to-idle",
-        "walk&sniff-to-walk": "walk-to-walk&sniff",
-        "walk-to-walk&sniff": "walk&sniff",
-        "idle": "idle-to-idle&sniff",
-        "idle&sniff": "idle&sniff-to-walk&sniff",
-        "walk": "walk-to-walk&sniff",
-        "sit": "sit-to-idle",
-        "sit-to-sit&lookBack": "sit&lookBack-to-sit",
-        "sit&lookBack-to-sit": "sit-to-idle",
-        "sit&lookBack": "sit&lookBack-to-sit",
-        "sleep": "sleep-to-sit"
+      "animationTransitions": {
+        "walk": "walk&sniff-to-walk",
+        "idle&sniff": "walk&sniff-to-idle&sniff"
       }
     },
     "sit&lookBack": {
@@ -253,73 +91,24 @@
       "wanderRules": {
         "minSeconds": 4,
         "maxSeconds": 10,
-        "nextIntent": ["idle", "walk", "sit"],
+        "nextIntent": ["sit"],
         "canTurn": false
       },
-      "intentTransitions": {
-        "idle-to-idle&sniff": "idle&sniff-to-idle",
-        "idle&sniff-to-idle": "idle-to-sit",
-        "idle&sniff-to-walk&sniff": "walk&sniff-to-idle&sniff",
-        "walk&sniff-to-idle&sniff": "idle&sniff-to-idle",
-        "idle-to-walk": "walk-to-idle",
-        "walk-to-idle": "idle-to-sit",
-        "idle-to-sit": "sit-to-sit&lookBack",
-        "sit-to-idle": "idle-to-sit",
-        "sit-to-sleep": "sleep-to-sit",
-        "sleep-to-sit": "sit-to-sit&lookBack",
-        "walk&sniff-to-walk": "walk-to-idle",
-        "walk-to-walk&sniff": "walk&sniff-to-idle&sniff",
-        "idle": "idle-to-sit",
-        "idle&sniff": "idle&sniff-to-idle",
-        "walk": "walk-to-idle",
-        "walk&sniff": "walk&sniff-to-idle&sniff",
-        "sit": "sit-to-sit&lookBack",
-        "sit-to-sit&lookBack": "sit&lookBack",
-        "sit&lookBack-to-sit": "sit-to-sit&lookBack",
-        "sleep": "sleep-to-sit"
+      "animationTransitions": {
+        "sit": "sit&lookBack-to-sit"
       }
     },
-    "idle-to-idle&sniff": {
-      "movementSpeed": { "x": 0, "y": 0 }
-    },
-    "idle&sniff-to-idle": {
-      "movementSpeed": { "x": 0, "y": 0 }
-    },
-    "idle&sniff-to-walk&sniff": {
-      "movementSpeed": { "x": 0, "y": 0 }
-    },
-    "walk&sniff-to-idle&sniff": {
-      "movementSpeed": { "x": 0.5, "y": 0 }
-    },
-    "idle-to-walk": {
-      "movementSpeed": { "x": 0, "y": 0 }
-    },
-    "walk-to-idle": {
-      "movementSpeed": { "x": 0.5, "y": 0 }
-    },
-    "idle-to-sit": {
-      "movementSpeed": { "x": 0, "y": 0 }
-    },
-    "sit-to-idle": {
-      "movementSpeed": { "x": 0, "y": 0 }
-    },
-    "sit-to-sleep": {
-      "movementSpeed": { "x": 0, "y": 0 }
-    },
-    "sleep-to-sit": {
-      "movementSpeed": { "x": 0, "y": 0 }
-    },
-    "walk&sniff-to-walk": {
-      "movementSpeed": { "x": 0, "y": 0 }
-    },
-    "walk-to-walk&sniff": {
-      "movementSpeed": { "x": 0, "y": 0 }
-    },
-    "sit-to-sit&lookBack": {
-      "movementSpeed": { "x": 0, "y": 0 }
-    },
-    "sit&lookBack-to-sit": {
-      "movementSpeed": { "x": 0, "y": 0 }
+    "idle&lookBack": {
+      "movementSpeed": { "x": 0, "y": 0 },
+      "wanderRules": {
+        "minSeconds": 4,
+        "maxSeconds": 10,
+        "nextIntent": ["idle"],
+        "canTurn": false
+      },
+      "animationTransitions": {
+        "idle": "idle&lookBack-to-idle"
+      }
     }
   }
 }
