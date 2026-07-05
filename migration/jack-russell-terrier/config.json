@@ -9,7 +9,7 @@
       "movementSpeed": { "x": 0, "y": 0 },
       "wanderRules": {
         "minSeconds": 5,
-        "maxSeconds": 10,
+        "maxSeconds": 15,
         "nextIntent": ["walk", "idle&sniff", "sit", "idle&lookBack"],
         "canTurn": true
       },
@@ -29,8 +29,8 @@
     "none": {
       "movementSpeed": { "x": 0, "y": 0 },
       "wanderRules": {
-        "minSeconds": 2,
-        "maxSeconds": 5,
+        "minSeconds": 0,
+        "maxSeconds": 0,
         "nextIntent": ["idle"],
         "canTurn": false
       }
@@ -50,8 +50,8 @@
     "idle&sniff": {
       "movementSpeed": { "x": 0, "y": 0 },
       "wanderRules": {
-        "minSeconds": 1,
-        "maxSeconds": 2,
+        "minSeconds": 4,
+        "maxSeconds": 8,
         "nextIntent": ["idle", "walk&sniff"],
         "canTurn": false
       },
@@ -77,7 +77,7 @@
       "movementSpeed": { "x": 1, "y": 0 },
       "wanderRules": {
         "minSeconds": 2,
-        "maxSeconds": 5,
+        "maxSeconds": 8,
         "nextIntent": ["walk", "idle&sniff"],
         "canTurn": false
       },
@@ -90,7 +90,7 @@
       "movementSpeed": { "x": 0, "y": 0 },
       "wanderRules": {
         "minSeconds": 4,
-        "maxSeconds": 10,
+        "maxSeconds": 6,
         "nextIntent": ["sit"],
         "canTurn": false
       },
@@ -102,7 +102,7 @@
       "movementSpeed": { "x": 0, "y": 0 },
       "wanderRules": {
         "minSeconds": 4,
-        "maxSeconds": 10,
+        "maxSeconds": 6,
         "nextIntent": ["idle"],
         "canTurn": false
       },

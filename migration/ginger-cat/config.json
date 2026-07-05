@@ -9,7 +9,7 @@
       "movementSpeed": { "x": 0, "y": 0 },
       "wanderRules": {
         "minSeconds": 5,
-        "maxSeconds": 10,
+        "maxSeconds": 15,
         "nextIntent": ["walk", "sit"],
         "canTurn": true
       },
@@ -27,8 +27,8 @@
     "none": {
       "movementSpeed": { "x": 0, "y": 0 },
       "wanderRules": {
-        "minSeconds": 2,
-        "maxSeconds": 5,
+        "minSeconds": 0,
+        "maxSeconds": 0,
         "nextIntent": ["idle"],
         "canTurn": false
       }
@@ -50,7 +50,7 @@
       "movementSpeed": { "x": 0, "y": 0 },
       "wanderRules": {
         "minSeconds": 10,
-        "maxSeconds": 20,
+        "maxSeconds": 180,
         "nextIntent": ["idle", "lounge", "walk", "sit&lookBack"],
         "canTurn": false
       },
@@ -64,8 +64,8 @@
     "groom": {
       "movementSpeed": { "x": 0, "y": 0 },
       "wanderRules": {
-        "minSeconds": 4,
-        "maxSeconds": 10,
+        "minSeconds": 8,
+        "maxSeconds": 15,
         "nextIntent": ["lounge"],
         "canTurn": false
       },
@@ -76,8 +76,8 @@
     "lounge": {
       "movementSpeed": { "x": 0, "y": 0 },
       "wanderRules": {
-        "minSeconds": 4,
-        "maxSeconds": 10,
+        "minSeconds": 20,
+        "maxSeconds": 300,
         "nextIntent": ["groom", "sit", "sleep", "lounge&lookBack"],
         "canTurn": false
       },
@@ -92,7 +92,7 @@
       "movementSpeed": { "x": 0, "y": 0 },
       "wanderRules": {
         "minSeconds": 4,
-        "maxSeconds": 10,
+        "maxSeconds": 6,
         "nextIntent": ["lounge"],
         "canTurn": false
       },
@@ -104,7 +104,7 @@
       "movementSpeed": { "x": 0, "y": 0 },
       "wanderRules": {
         "minSeconds": 4,
-        "maxSeconds": 10,
+        "maxSeconds": 6,
         "nextIntent": ["sit"],
         "canTurn": false
       },
