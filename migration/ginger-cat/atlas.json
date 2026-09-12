@@ -1533,6 +1533,6 @@
     "image": "spritesheet.png",
     "format": "RGBA8888",
     "size": { "w": 580, "h": 396 },
-    "scale": "0.5"
+    "scale": "1"
   }
 }

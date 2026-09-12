@@ -3185,7 +3185,7 @@
       "h": 450
     },
     "version": "1.3.17.2-arm64",
-    "scale": 0.5,
+    "scale": 1,
     "format": "RGBA8888"
   }
 }
