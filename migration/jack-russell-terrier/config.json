@@ -40,11 +40,12 @@
       "wanderRules": {
         "minSeconds": 3,
         "maxSeconds": 8,
-        "nextIntent": ["idle"],
+        "nextIntent": ["idle", "walk&sniff"],
         "canTurn": true
       },
       "animationTransitions": {
-        "idle": "walk-to-idle"
+        "idle": "walk-to-idle",
+        "walk&sniff": "walk-to-walk&sniff"
       }
     },
     "idle&sniff": {
@@ -146,6 +147,12 @@
         "idle": "idle"
       }
     },
+    "walk-to-walk&sniff": {
+      "movementSpeed": { "x": 1, "y": 0 },
+      "animationTransitions": {
+        "walk&sniff": "walk&sniff"
+      }
+    },
     "idle&sniff-to-idle": {
       "movementSpeed": { "x": 0, "y": 0 },
       "animationTransitions": {
@@ -171,7 +178,7 @@
       }
     },
     "walk&sniff-to-walk": {
-      "movementSpeed": { "x": 0, "y": 0 },
+      "movementSpeed": { "x": 1, "y": 0 },
       "animationTransitions": {
         "walk": "walk"
       }
