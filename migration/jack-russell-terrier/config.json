@@ -109,6 +109,90 @@
       "animationTransitions": {
         "idle": "idle&lookBack-to-idle"
       }
+    },
+    "idle-to-walk": {
+      "movementSpeed": { "x": 0.5, "y": 0 },
+      "animationTransitions": {
+        "walk": "walk"
+      }
+    },
+    "idle-to-idle&sniff": {
+      "movementSpeed": { "x": 0, "y": 0 },
+      "animationTransitions": {
+        "idle&sniff": "idle&sniff"
+      }
+    },
+    "idle-to-sit": {
+      "movementSpeed": { "x": 0, "y": 0 },
+      "animationTransitions": {
+        "sit": "sit"
+      }
+    },
+    "idle-to-idle&lookBack": {
+      "movementSpeed": { "x": 0, "y": 0 },
+      "animationTransitions": {
+        "idle&lookBack": "idle&lookBack"
+      }
+    },
+    "sleep-to-sit": {
+      "movementSpeed": { "x": 0, "y": 0 },
+      "animationTransitions": {
+        "sit": "sit"
+      }
+    },
+    "walk-to-idle": {
+      "movementSpeed": { "x": 0.5, "y": 0 },
+      "animationTransitions": {
+        "idle": "idle"
+      }
+    },
+    "idle&sniff-to-idle": {
+      "movementSpeed": { "x": 0, "y": 0 },
+      "animationTransitions": {
+        "idle": "idle"
+      }
+    },
+    "idle&sniff-to-walk&sniff": {
+      "movementSpeed": { "x": 0.5, "y": 0 },
+      "animationTransitions": {
+        "walk&sniff": "walk&sniff"
+      }
+    },
+    "sit-to-idle": {
+      "movementSpeed": { "x": 0, "y": 0 },
+      "animationTransitions": {
+        "idle": "idle"
+      }
+    },
+    "sit-to-sit&lookBack": {
+      "movementSpeed": { "x": 0, "y": 0 },
+      "animationTransitions": {
+        "sit&lookBack": "sit&lookBack"
+      }
+    },
+    "walk&sniff-to-walk": {
+      "movementSpeed": { "x": 0, "y": 0 },
+      "animationTransitions": {
+        "walk": "walk"
+      }
+    },
+    "walk&sniff-to-idle&sniff": {
+      "movementSpeed": { "x": 0.5, "y": 0 },
+      "animationTransitions": {
+        "idle&sniff": "idle&sniff"
+      }
+    },
+    "sit&lookBack-to-sit": {
+      "movementSpeed": { "x": 0, "y": 0 },
+      "animationTransitions": {
+        "sit": "sit"
+      }
+    },
+    "idle&lookBack-to-idle": {
+      "movementSpeed": { "x": 0, "y": 0 },
+      "animationTransitions": {
+        "idle": "idle"
+      }
     }
   }
 }

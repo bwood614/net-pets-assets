@@ -111,6 +111,91 @@
       "animationTransitions": {
         "sit": "sit&lookBack-to-sit"
       }
+    },
+    "idle-to-walk": {
+      "movementSpeed": { "x": 0.4, "y": 0 },
+      "animationTransitions": {
+        "walk": "walk"
+      }
+    },
+    "idle-to-sit": {
+      "movementSpeed": { "x": 0, "y": 0 },
+      "animationTransitions": {
+        "sit": "sit"
+      }
+    },
+    "sleep-to-lounge": {
+      "movementSpeed": { "x": 0, "y": 0 },
+      "animationTransitions": {
+        "lounge": "lounge"
+      }
+    },
+    "walk-to-idle": {
+      "movementSpeed": { "x": 0.4, "y": 0 },
+      "animationTransitions": {
+        "idle": "idle"
+      }
+    },
+    "sit-to-idle": {
+      "movementSpeed": { "x": 0, "y": 0 },
+      "animationTransitions": {
+        "idle": "idle",
+        "walk": "walk"
+      }
+    },
+    "sit-to-lounge": {
+      "movementSpeed": { "x": 0, "y": 0 },
+      "animationTransitions": {
+        "lounge": "lounge"
+      }
+    },
+    "sit-to-sit&lookBack": {
+      "movementSpeed": { "x": 0, "y": 0 },
+      "animationTransitions": {
+        "sit&lookBack": "sit&lookBack"
+      }
+    },
+    "sit&lookBack-to-sit": {
+      "movementSpeed": { "x": 0, "y": 0 },
+      "animationTransitions": {
+        "sit": "sit"
+      }
+    },
+    "lounge-to-groom": {
+      "movementSpeed": { "x": 0, "y": 0 },
+      "animationTransitions": {
+        "groom": "groom"
+      }
+    },
+    "lounge-to-sit": {
+      "movementSpeed": { "x": 0, "y": 0 },
+      "animationTransitions": {
+        "sit": "sit"
+      }
+    },
+    "lounge-to-sleep": {
+      "movementSpeed": { "x": 0, "y": 0 },
+      "animationTransitions": {
+        "sleep": "sleep"
+      }
+    },
+    "lounge-to-lounge&lookBack": {
+      "movementSpeed": { "x": 0, "y": 0 },
+      "animationTransitions": {
+        "lounge&lookBack": "lounge&lookBack"
+      }
+    },
+    "lounge&lookBack-to-lounge": {
+      "movementSpeed": { "x": 0, "y": 0 },
+      "animationTransitions": {
+        "lounge": "lounge"
+      }
+    },
+    "groom-to-lounge": {
+      "movementSpeed": { "x": 0, "y": 0 },
+      "animationTransitions": {
+        "lounge": "lounge"
+      }
     }
   }
 }
