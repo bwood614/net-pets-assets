@@ -10,20 +10,17 @@
       "wanderRules": {
         "minSeconds": 5,
         "maxSeconds": 15,
-        "nextIntent": [
-          { "animation": "walk", "canTurn": true },
-          { "animation": "sit", "canTurn": false }
-        ]
+        "nextIntent": ["walk", "sit"]
       },
       "animationTransitions": {
-        "walk": "idle-to-walk",
-        "sit": "idle-to-sit"
+        "walk": { "nextAnimation": "idle-to-walk", "canTurn": true },
+        "sit": { "nextAnimation": "idle-to-sit", "canTurn": true }
       }
     },
     "sleep": {
       "movementSpeed": { "x": 0, "y": 0 },
       "animationTransitions": {
-        "lounge": "sleep-to-lounge"
+        "lounge": { "nextAnimation": "sleep-to-lounge", "canTurn": false }
       }
     },
     "none": {
@@ -31,7 +28,7 @@
       "wanderRules": {
         "minSeconds": 0,
         "maxSeconds": 0,
-        "nextIntent": [{ "animation": "idle", "canTurn": false }]
+        "nextIntent": ["idle"]
       }
     },
     "walk": {
@@ -39,14 +36,11 @@
       "wanderRules": {
         "minSeconds": 3,
         "maxSeconds": 8,
-        "nextIntent": [
-          { "animation": "idle", "canTurn": false },
-          { "animation": "sit", "canTurn": false }
-        ]
+        "nextIntent": ["idle", "sit"]
       },
       "animationTransitions": {
-        "idle": "walk-to-idle",
-        "sit": "idle-to-sit"
+        "idle": { "nextAnimation": "walk-to-idle", "canTurn": true },
+        "sit": { "nextAnimation": "idle-to-sit", "canTurn": false }
       }
     },
     "sit": {
@@ -54,18 +48,16 @@
       "wanderRules": {
         "minSeconds": 10,
         "maxSeconds": 180,
-        "nextIntent": [
-          { "animation": "idle", "canTurn": false },
-          { "animation": "lounge", "canTurn": false },
-          { "animation": "walk", "canTurn": false },
-          { "animation": "sit&lookBack", "canTurn": false }
-        ]
+        "nextIntent": ["idle", "lounge", "walk", "sit&lookBack"]
       },
       "animationTransitions": {
-        "idle": "sit-to-idle",
-        "lounge": "sit-to-lounge",
-        "walk": "sit-to-idle",
-        "sit&lookBack": "sit-to-sit&lookBack"
+        "idle": { "nextAnimation": "sit-to-idle", "canTurn": false },
+        "lounge": { "nextAnimation": "sit-to-lounge", "canTurn": false },
+        "walk": { "nextAnimation": "sit-to-idle", "canTurn": false },
+        "sit&lookBack": {
+          "nextAnimation": "sit-to-sit&lookBack",
+          "canTurn": false
+        }
       }
     },
     "groom": {
@@ -73,10 +65,10 @@
       "wanderRules": {
         "minSeconds": 8,
         "maxSeconds": 15,
-        "nextIntent": [{ "animation": "lounge", "canTurn": false }]
+        "nextIntent": ["lounge"]
       },
       "animationTransitions": {
-        "lounge": "groom-to-lounge"
+        "lounge": { "nextAnimation": "groom-to-lounge", "canTurn": false }
       }
     },
     "lounge": {
@@ -84,18 +76,16 @@
       "wanderRules": {
         "minSeconds": 20,
         "maxSeconds": 300,
-        "nextIntent": [
-          { "animation": "groom", "canTurn": false },
-          { "animation": "sit", "canTurn": false },
-          { "animation": "sleep", "canTurn": false },
-          { "animation": "lounge&lookBack", "canTurn": false }
-        ]
+        "nextIntent": ["groom", "sit", "sleep", "lounge&lookBack"]
       },
       "animationTransitions": {
-        "groom": "lounge-to-groom",
-        "sit": "lounge-to-sit",
-        "sleep": "lounge-to-sleep",
-        "lounge&lookBack": "lounge-to-lounge&lookBack"
+        "groom": { "nextAnimation": "lounge-to-groom", "canTurn": false },
+        "sit": { "nextAnimation": "lounge-to-sit", "canTurn": false },
+        "sleep": { "nextAnimation": "lounge-to-sleep", "canTurn": false },
+        "lounge&lookBack": {
+          "nextAnimation": "lounge-to-lounge&lookBack",
+          "canTurn": false
+        }
       }
     },
     "lounge&lookBack": {
@@ -103,10 +93,13 @@
       "wanderRules": {
         "minSeconds": 4,
         "maxSeconds": 6,
-        "nextIntent": [{ "animation": "lounge", "canTurn": false }]
+        "nextIntent": ["lounge"]
       },
       "animationTransitions": {
-        "lounge": "lounge&lookBack-to-lounge"
+        "lounge": {
+          "nextAnimation": "lounge&lookBack-to-lounge",
+          "canTurn": false
+        }
       }
     },
     "sit&lookBack": {
@@ -114,95 +107,98 @@
       "wanderRules": {
         "minSeconds": 4,
         "maxSeconds": 6,
-        "nextIntent": [{ "animation": "sit", "canTurn": false }]
+        "nextIntent": ["sit"]
       },
       "animationTransitions": {
-        "sit": "sit&lookBack-to-sit"
+        "sit": { "nextAnimation": "sit&lookBack-to-sit", "canTurn": false }
       }
     },
     "idle-to-walk": {
       "movementSpeed": { "x": 0.4, "y": 0 },
       "animationTransitions": {
-        "walk": "walk"
+        "walk": { "nextAnimation": "walk", "canTurn": false }
       }
     },
     "idle-to-sit": {
       "movementSpeed": { "x": 0, "y": 0 },
       "animationTransitions": {
-        "sit": "sit"
+        "sit": { "nextAnimation": "sit", "canTurn": false }
       }
     },
     "sleep-to-lounge": {
       "movementSpeed": { "x": 0, "y": 0 },
       "animationTransitions": {
-        "lounge": "lounge"
+        "lounge": { "nextAnimation": "lounge", "canTurn": false }
       }
     },
     "walk-to-idle": {
       "movementSpeed": { "x": 0.4, "y": 0 },
       "animationTransitions": {
-        "idle": "idle"
+        "idle": { "nextAnimation": "idle", "canTurn": false }
       }
     },
     "sit-to-idle": {
       "movementSpeed": { "x": 0, "y": 0 },
       "animationTransitions": {
-        "idle": "idle",
-        "walk": "walk"
+        "idle": { "nextAnimation": "idle", "canTurn": true },
+        "walk": { "nextAnimation": "walk", "canTurn": true }
       }
     },
     "sit-to-lounge": {
       "movementSpeed": { "x": 0, "y": 0 },
       "animationTransitions": {
-        "lounge": "lounge"
+        "lounge": { "nextAnimation": "lounge", "canTurn": false }
       }
     },
     "sit-to-sit&lookBack": {
       "movementSpeed": { "x": 0, "y": 0 },
       "animationTransitions": {
-        "sit&lookBack": "sit&lookBack"
+        "sit&lookBack": { "nextAnimation": "sit&lookBack", "canTurn": false }
       }
     },
     "sit&lookBack-to-sit": {
       "movementSpeed": { "x": 0, "y": 0 },
       "animationTransitions": {
-        "sit": "sit"
+        "sit": { "nextAnimation": "sit", "canTurn": false }
       }
     },
     "lounge-to-groom": {
       "movementSpeed": { "x": 0, "y": 0 },
       "animationTransitions": {
-        "groom": "groom"
+        "groom": { "nextAnimation": "groom", "canTurn": false }
       }
     },
     "lounge-to-sit": {
       "movementSpeed": { "x": 0, "y": 0 },
       "animationTransitions": {
-        "sit": "sit"
+        "sit": { "nextAnimation": "sit", "canTurn": false }
       }
     },
     "lounge-to-sleep": {
       "movementSpeed": { "x": 0, "y": 0 },
       "animationTransitions": {
-        "sleep": "sleep"
+        "sleep": { "nextAnimation": "sleep", "canTurn": false }
       }
     },
     "lounge-to-lounge&lookBack": {
       "movementSpeed": { "x": 0, "y": 0 },
       "animationTransitions": {
-        "lounge&lookBack": "lounge&lookBack"
+        "lounge&lookBack": {
+          "nextAnimation": "lounge&lookBack",
+          "canTurn": false
+        }
       }
     },
     "lounge&lookBack-to-lounge": {
       "movementSpeed": { "x": 0, "y": 0 },
       "animationTransitions": {
-        "lounge": "lounge"
+        "lounge": { "nextAnimation": "lounge", "canTurn": false }
       }
     },
     "groom-to-lounge": {
       "movementSpeed": { "x": 0, "y": 0 },
       "animationTransitions": {
-        "lounge": "lounge"
+        "lounge": { "nextAnimation": "lounge", "canTurn": false }
       }
     }
   }
