@@ -10,8 +10,12 @@
       "wanderRules": {
         "minSeconds": 5,
         "maxSeconds": 15,
-        "nextIntent": ["walk", "idle&sniff", "sit", "idle&lookBack"],
-        "canTurn": true
+        "nextIntent": [
+          { "animation": "walk", "canTurn": true },
+          { "animation": "idle&sniff", "canTurn": false },
+          { "animation": "sit", "canTurn": false },
+          { "animation": "idle&lookBack", "canTurn": false }
+        ]
       },
       "animationTransitions": {
         "walk": "idle-to-walk",
@@ -31,8 +35,7 @@
       "wanderRules": {
         "minSeconds": 0,
         "maxSeconds": 0,
-        "nextIntent": ["idle"],
-        "canTurn": false
+        "nextIntent": [{ "animation": "idle", "canTurn": false }]
       }
     },
     "walk": {
@@ -40,11 +43,15 @@
       "wanderRules": {
         "minSeconds": 3,
         "maxSeconds": 8,
-        "nextIntent": ["idle", "walk&sniff"],
-        "canTurn": true
+        "nextIntent": [
+          { "animation": "idle", "canTurn": false },
+          { "animation": "sit", "canTurn": false },
+          { "animation": "walk&sniff", "canTurn": false }
+        ]
       },
       "animationTransitions": {
         "idle": "walk-to-idle",
+        "sit": "idle-to-sit",
         "walk&sniff": "walk-to-walk&sniff"
       }
     },
@@ -53,8 +60,10 @@
       "wanderRules": {
         "minSeconds": 4,
         "maxSeconds": 8,
-        "nextIntent": ["idle", "walk&sniff"],
-        "canTurn": false
+        "nextIntent": [
+          { "animation": "idle", "canTurn": false },
+          { "animation": "walk&sniff", "canTurn": true }
+        ]
       },
       "animationTransitions": {
         "idle": "idle&sniff-to-idle",
@@ -66,8 +75,10 @@
       "wanderRules": {
         "minSeconds": 10,
         "maxSeconds": 20,
-        "nextIntent": ["idle", "sit&lookBack"],
-        "canTurn": false
+        "nextIntent": [
+          { "animation": "idle", "canTurn": false },
+          { "animation": "sit&lookBack", "canTurn": false }
+        ]
       },
       "animationTransitions": {
         "idle": "sit-to-idle",
@@ -79,8 +90,10 @@
       "wanderRules": {
         "minSeconds": 2,
         "maxSeconds": 8,
-        "nextIntent": ["walk", "idle&sniff"],
-        "canTurn": false
+        "nextIntent": [
+          { "animation": "walk", "canTurn": false },
+          { "animation": "idle&sniff", "canTurn": true }
+        ]
       },
       "animationTransitions": {
         "walk": "walk&sniff-to-walk",
@@ -92,8 +105,7 @@
       "wanderRules": {
         "minSeconds": 4,
         "maxSeconds": 6,
-        "nextIntent": ["sit"],
-        "canTurn": false
+        "nextIntent": [{ "animation": "sit", "canTurn": false }]
       },
       "animationTransitions": {
         "sit": "sit&lookBack-to-sit"
@@ -104,8 +116,7 @@
       "wanderRules": {
         "minSeconds": 4,
         "maxSeconds": 6,
-        "nextIntent": ["idle"],
-        "canTurn": false
+        "nextIntent": [{ "animation": "idle", "canTurn": false }]
       },
       "animationTransitions": {
         "idle": "idle&lookBack-to-idle"
