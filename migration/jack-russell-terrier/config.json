@@ -41,7 +41,7 @@
       }
     },
     "walk": {
-      "movementSpeed": { "x": 1, "y": 0 },
+      "movementSpeed": { "x": 0.9, "y": 0 },
       "wanderRules": {
         "minSeconds": 3,
         "maxSeconds": 8,
@@ -88,7 +88,7 @@
       }
     },
     "walk&sniff": {
-      "movementSpeed": { "x": 1, "y": 0 },
+      "movementSpeed": { "x": 0.9, "y": 0 },
       "wanderRules": {
         "minSeconds": 2,
         "maxSeconds": 8,
@@ -161,7 +161,7 @@
       }
     },
     "walk-to-walk&sniff": {
-      "movementSpeed": { "x": 1, "y": 0 },
+      "movementSpeed": { "x": 0.9, "y": 0 },
       "animationTransitions": {
         "walk&sniff": { "nextAnimation": "walk&sniff", "canTurn": false }
       }
@@ -192,7 +192,7 @@
       }
     },
     "walk&sniff-to-walk": {
-      "movementSpeed": { "x": 1, "y": 0 },
+      "movementSpeed": { "x": 0.9, "y": 0 },
       "animationTransitions": {
         "walk": { "nextAnimation": "walk", "canTurn": false }
       }
